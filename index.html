@@ -26,6 +26,13 @@
       justify-content: center;
       align-items: center;
     }
+
+    @media only screen and (max-width: 600px) {
+      .content {
+        width:auto;
+      }
+    }
+
     main {
       max-width: 300px;
       border: 1px solid gray;
@@ -78,7 +85,7 @@
       color:hsl(223, 47%, 23%);
     }
     .orderSummary--plan__img {
-      width: 18%;
+      width: 25%;
     }
 
     .darkTextColor {
@@ -98,11 +105,11 @@
     }
     .orderSummary--paymentButton__button {
       width: 100%;
-      padding: 4px;
+      padding: 10px;
       color: white;
       background-color: hsl(245, 75%, 52%);
       border-radius: 10px;
-      font-weight: bold;
+      font-weight: 900;
     }
     .orderSummary--cancelButton {
       margin-bottom: 40px;
@@ -112,7 +119,7 @@
       color: gray;
       background-color:transparent;
       border: none;
-      font-weight: bold;
+      font-weight: 900;
     }
 
   </style>
