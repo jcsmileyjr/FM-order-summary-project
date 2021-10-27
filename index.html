@@ -12,26 +12,155 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-image: url("./images/pattern-background-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 100vh;
+      background-color: hsl(225, 100%, 94%);
+    }
+    .content {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    main {
+      max-width: 300px;
+      border: 1px solid gray;
+      border-radius: 15px; 
+      background-color: white;
+    }
+    article {padding: 0 25px;}
+    header {
+      background-image: url("./images/illustration-hero.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 165px;
+      background-position: center;           
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+
+    h1 {
+      font-weight: 900;
+    }
+
+    .orderSummary--text {
+      text-align: center;
+    }
+    .grayText {
+      color: gray;
+    }
+
+    .orderSummary--plan {
+      background-color:  hsl(225, 100%, 98%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 15px;
+      padding: 0 10px;
+    }
+    .orderSummary--plan__data {
+      display: flex;
+      align-items: center;
+      flex: 2;
+      width: 100%;
+    }
+
+    .orderSummary--plan__content {
+      margin-left: 10px;
+    }
+    .orderSummary--plan__change {
+      flex: 1;
+      text-align: right;
+      color:hsl(223, 47%, 23%);
+    }
+    .orderSummary--plan__img {
+      width: 18%;
+    }
+
+    .darkTextColor {
+      font-weight: 900;
+      margin-bottom: 2px;
+    }
+
+    .lightTextColor {
+      color: grey;
+      margin-top: 2px;
+    }
+
+    .orderSummary--paymentButton, .orderSummary--cancelButton {
+      width: 100%;
+      margin-top: 20px;
+      
+    }
+    .orderSummary--paymentButton__button {
+      width: 100%;
+      padding: 4px;
+      color: white;
+      background-color: hsl(245, 75%, 52%);
+      border-radius: 10px;
+      font-weight: bold;
+    }
+    .orderSummary--cancelButton {
+      margin-bottom: 40px;
+    }
+    .orderSummary--cancelButton__button {
+      width: 100%;
+      color: gray;
+      background-color:transparent;
+      border: none;
+      font-weight: bold;
+    }
+
   </style>
 </head>
 <body>
-  <img src="./images/illustration-hero.svg" alt="tes" />
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+  <div class="content">
+    <main>
+      <header></header>
+      <article>
+        <section class="orderSummary--text">
+          <h1>Order Summary</h1>
+          <p class="grayText">You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!</p>
+        </section>
+        <section class="orderSummary--plan">
+          <div class="orderSummary--plan__data">
+            <img class="orderSummary--plan__img" src="images/icon-music.svg" alt="music symbol" />
+            <div class="orderSummary--plan__content">
+              <p class="darkTextColor">Annual Plan</p>
+              <p class="lightTextColor">$59.99/year</p>
+            </div>
+          </div>
+          <a class="orderSummary--plan__change" href="">Change</a>
+        </section>
+        <section class="orderSummary--paymentButton">
+          <button class="orderSummary--paymentButton__button" type="button">Proceed to Payment</button>
+        </section>
+        <section class="orderSummary--cancelButton">
+          <button class="orderSummary--cancelButton__button" type="button">Cancel Order</button>
+        </section>
+      </article>
+    </main>
+  </div>
   
-  <div class="attribution">
+
+  
+
+  
+  
+
+  
+
+  
+  
+  
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
